@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+:root{
+    --soft-blue: #8bacda;
+    --aqua: 	#00fff7;
+
+    --abyss: #0d192b;
+    --navy: 	#14253d;
+    --pretty-gray: #2f415b; 
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: var(--abyss);
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+.container{
+    
+    height: 600px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: var(--navy);
+}
+.image {
+    position: relative;
+}
+
+.nft {
+    border-radius: 30px;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nft img {
+    border-radius: 30px;
+    width: 100%;
+    padding: 1.5rem;
+    height: auto;
+    display: block;
+}
+
+.nft-hover {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 86%;
+    height: 85.5%;
+    border-radius: 5px;
+    padding: 8rem;
+    background-color: var(--aqua);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.1s; /* Move the transition here */
+}
+
+.nft-hover:hover {
+    opacity: 0.6; /* Change opacity to 1 on hover */
+}
+
+.title{
+    cursor: pointer;
+    color: white;
+    padding-left: 1.5rem;
+    font-weight: 500;
+    font-size: 22px;
+}
+.title:hover{
+    color: var(--aqua);
+}
+.subtitle{
+    color: var(--soft-blue);
+    font-weight: 200;
+    padding: 1.5rem;
+    font-size: 18px;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.ether-container{
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.ether-amount{
+    margin-left: 0.5rem;
+    color: var(--aqua);
+    font-size: 18px;
+    font-weight: 400;
+}
+.time-limit-container{
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.countdown{
+    margin-left: 6px;
+    color: var(--soft-blue);
+    font-size: 17px;
+    font-weight: 300;
+}
+.line{
+    display: flex;
+    align-self: center;
+    margin: 1.5rem;
+    height: 1px;
+    background-color: var(--pretty-gray);
+}
+.profile-container {
+    margin: 1.5rem ;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container .profile-name {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.profile-container .pfp {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.name{
+    color: white;
+    text-decoration: none;
+}
+.name:hover{
+    color: var(--aqua);
+}
+
